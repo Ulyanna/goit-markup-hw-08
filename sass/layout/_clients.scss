@@ -2,21 +2,37 @@
 .section-clients__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--card-set-gap));
+  margin: -15px;
 }
 .section-clients__item {
-  flex-basis: calc(100% / 6 - var(--card-set-gap));
-  margin-right: var(--card-set-gap);
+  margin: 15px;
+  flex-basis: calc((100% - 2 * 30px) / 2);
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 3 * 90px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 6 * 180px) / 6);
   }
 }
 
 .section-clients__link {
   display: flex;
-  width: 170px;
-  height: 92px;
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
 
   align-items: center;
   justify-content: center;

@@ -7,8 +7,14 @@
 
 /* ------------------------------------------ */
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+}
+.footer__box {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 .footer__logo {
   display: inline;
@@ -29,11 +35,12 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  text-align: center;
 }
 
 .contacts-footer__link-address {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   font-style: normal;
   line-height: 1.7;
@@ -45,11 +52,15 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts-footer__link-mail {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-style: normal;
   line-height: 1.7;
   color: var(--contacts-footer-color);
@@ -58,6 +69,10 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
   }
 }
 .contacts-footer__link-tel {
@@ -73,7 +88,9 @@
   }
 }
 .footer-social-box {
-  margin-left: 70px;
+  // margin-left: 70px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 .footer-social-box__text {
   margin-bottom: 20px;
@@ -89,15 +106,14 @@
 .footer-social-box__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -10px;
+  // margin-right: -10px;
+  margin: -5px;
+  justify-content: center;
 }
 .footer-social-box__item {
-  flex-basis: calc(100% / 4 - 10px);
-  margin-right: 10px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  flex-basis: calc((100% - 4 * 40px) / 4);
+  margin: 5px;
+  // margin-right: 10px;
 }
 .footer-social-box__link {
   display: block;
@@ -118,7 +134,8 @@
   fill: currentColor;
 }
 .footer-form-box {
-  margin-left: auto;
+  // margin-left: auto;
+  text-align: center;
 }
 .footer-form-box__text {
   margin-bottom: 20px;
@@ -136,7 +153,8 @@
   padding-bottom: 15px;
   padding-left: 16px;
 
-  width: 358px;
+  // width: 358px;
+  width: 450px;
   height: 50px;
 
   color: rgba(255, 255, 255, 0.6);
