@@ -1,8 +1,26 @@
 /* Страница Портфолио Фильтр*/
 .filters-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.filters-list__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 }
 .filters-list__btn {
   padding: 6px 22px 6px 22px;
@@ -36,8 +54,4 @@
 
     cursor: pointer;
   }
-}
-
-.filters-list__item:not(:last-child) {
-  margin-right: 8px;
 }

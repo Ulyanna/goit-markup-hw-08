@@ -1,17 +1,32 @@
 /* Примеры работ Портофолио  */
 
 .works-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+  }
 }
 .works-list__item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
-
   background-color: var(--white-color);
+  margin-bottom: var(--card-set-gap);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &:first-child .works-list__card-box {
+        padding-bottom: 56px;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
 }
 .works-list__link:hover,
 .works-list__link:focus {
@@ -23,6 +38,11 @@
 .works-list__thumb {
   position: relative;
   overflow: hidden;
+}
+.works-list__thumb {
+  img {
+    width: 100%;
+  }
 }
 
 .works-list__thumb-text {

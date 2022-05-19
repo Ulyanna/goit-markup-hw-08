@@ -13,13 +13,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка в сайте-->
-    <header class="header">
-      <!--Навигация в шапке-->
+    <!-- <header class="header">
       <div class="container header-content">
         <nav class="naw">
           <a href="./index.html" class="logo naw__logo logo--dark text"
@@ -38,7 +36,7 @@
           </ul>
         </nav>
 
-        <!--Блок контакты-->
+      
 
         <ul class="contacts-block">
           <li class="contacts-block__item">
@@ -59,12 +57,11 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <!--Фильтры-->
       <section class="section">
-        <!--Скрытый заголовок-->
-        <!-- <h1>Примеры работ</h1> -->
+        <h1 class="visually-hidden">Примеры работ</h1>
         <div class="container">
           <ul class="filters filters-list">
             <li class="filters-list__item">
@@ -289,64 +286,66 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer__box">
-          <a href="" class="logo footer__logo logo--light text">
-            <span class="footer__logo-first">Web</span>Studio
-          </a>
+        <div class="footer__box-tablet">
+          <div class="footer__box">
+            <a href="" class="logo footer__logo logo--light text">
+              <span class="footer__logo-first">Web</span>Studio
+            </a>
 
-          <address class="contacts-footer">
-            <ul class="contacts-footer__list">
-              <li class="contacts-footer__item">
-                <a href="" class="contacts-footer__link-address text">
-                  г. Киев, пр-т Леси Украинки, 26,</a
-                >
+            <address class="contacts-footer">
+              <ul class="contacts-footer__list">
+                <li class="contacts-footer__item">
+                  <a href="" class="contacts-footer__link-address text">
+                    г. Киев, пр-т Леси Украинки, 26,</a
+                  >
+                </li>
+                <li class="contacts-footer__item">
+                  <a href="mailto:info@example.com" class="contacts-footer__link-mail text"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="contacts-footer__item">
+                  <a href="tel:+380991111111" class="contacts-footer__link-tel text"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="social-box footer-social-box">
+            <p class="footer-social-box__text">Присоединяйтесь</p>
+            <ul class="footer-social-box__list">
+              <li class="footer-social-box__item">
+                <a href="" class="footer-social-box__link">
+                  <svg class="footer-social-box__icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts-footer__item">
-                <a href="mailto:info@example.com" class="contacts-footer__link-mail text"
-                  >info@example.com</a
-                >
+              <li class="footer-social-box__item">
+                <a href="" class="footer-social-box__link">
+                  <svg class="footer-social-box__icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts-footer__item">
-                <a href="tel:+380991111111" class="contacts-footer__link-tel text"
-                  >+38 099 111 11 11</a
-                >
+              <li class="footer-social-box__item">
+                <a href="" class="footer-social-box__link">
+                  <svg class="footer-social-box__icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-box__item">
+                <a href="" class="footer-social-box__link">
+                  <svg class="footer-social-box__icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="social-box footer-social-box">
-          <p class="footer-social-box__text">Присоединяйтесь</p>
-          <ul class="footer-social-box__list">
-            <li class="footer-social-box__item">
-              <a href="" class="footer-social-box__link">
-                <svg class="footer-social-box__icon" width="44" height="44">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-box__item">
-              <a href="" class="footer-social-box__link">
-                <svg class="footer-social-box__icon" width="44" height="44">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-box__item">
-              <a href="" class="footer-social-box__link">
-                <svg class="footer-social-box__icon" width="44" height="44">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="ffooter-social-box__item">
-              <a href="" class="footer-social-box__link">
-                <svg class="footer-social-box__icon" width="44" height="44">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-form-box">
           <form class="fotter-form-box__form">
