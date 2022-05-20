@@ -18,12 +18,18 @@
   </head>
   <body>
     <!--Шапка в сайте-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-content">
         <nav class="naw">
           <a href="./index.html" class="logo naw__logo logo--dark text"
             ><span class="naw__logo-first">Web</span>Studio</a
           >
+          <button type="button" class="btn-menu-mobile is-open" js-open-menu>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use href="./images/sprite.svg#icon-menu" class="btn-menu-mobile__icon"></use>
+              <use href="./images/sprite.svg#icon-close" class="btn-menu-mobile__close"></use>
+            </svg>
+          </button>
           <ul class="naw-list">
             <li class="naw-list__item">
               <a href="./index.html" class="naw-list__link text current">Студия</a>
@@ -33,11 +39,11 @@
             </li>
             <li class="naw-list-item"><a href="" class="naw-list__link text">Контакты</a></li>
           </ul>
-        </nav> -->
+        </nav>
 
-    <!--Блок контакты-->
+        <!--Блок контакты-->
 
-    <!-- <ul class="contacts-block">
+        <ul class="contacts-block">
           <li class="contacts-block__item">
             <a href="mailto:info@devstudio.com" class="contacts-block__link text">
               <svg class="contacts-block__icon" width="16px" height="12px">
@@ -56,7 +62,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Секция Герой -->
       <section class="hero">
@@ -501,7 +507,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-        <button type="button" class="modal__btn-exit" data-modal-close>
+        <button type="button" class="modal__btn-exit" data-menu-button>
           <svg class="modal__icon-exit" width="11" height="11">
             <use href="./images/sprite.svg#icon-cross"></use>
           </svg>
@@ -577,5 +583,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

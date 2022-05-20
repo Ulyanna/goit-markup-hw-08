@@ -10,9 +10,23 @@
 .naw {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 .naw__logo {
-  margin-right: 93px;
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .logo--dark {
   color: var(--title-text-color);
@@ -31,6 +45,9 @@
 /* Навигация шапка */
 
 .naw-list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   display: flex;
 
   & :not(:last-child) {
@@ -81,17 +98,29 @@
 
 /* Блок контакты */
 .contacts-block {
-  display: flex;
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
-.contacts-block__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts-block__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
+
 .contacts-block__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   color: var(--primary-text-color);
   font-weight: 500;
