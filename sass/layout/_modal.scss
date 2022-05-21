@@ -16,7 +16,7 @@
   overflow-y: scroll;
 
   @media screen and (min-width: 768px) {
-    // padding: 0;
+    padding: 0;
   }
 }
 .backdrop.is-hidden .modal {
@@ -30,7 +30,6 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
 
   @media screen and (min-width: 480px) {
     position: absolute;
@@ -43,7 +42,7 @@
     width: 528px;
   }
   @media screen and (max-height: 600px) and (min-width: 480px) {
-    transform: translate(-50%, -50vh) scale(1);
+    transform: translate(-50%, -40vh) scale(1);
   }
 }
 .modal__title {
