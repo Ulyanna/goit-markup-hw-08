@@ -1,5 +1,6 @@
 /* Хедер */
 .header {
+  position: relative;
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
 }
@@ -28,7 +29,7 @@
     margin-right: 93px;
   }
 }
-.logo--dark {
+.naw__logo {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;

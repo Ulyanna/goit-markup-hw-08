@@ -1,0 +1,118 @@
+.btn-menu-mobile {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+
+.container-mobile {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 10px;
+  padding-bottom: 48px;
+  background-color: var(--white-color);
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.btn-menu-mobile__close {
+  display: block;
+  padding: 0;
+  margin-left: auto;
+  margin-bottom: 8px;
+  border: none;
+  background-color: transparent;
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+
+.mob-menu-block {
+  margin-bottom: 302px;
+}
+.mob-menu-block__link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+  &.current {
+    color: var(--accent-color);
+  }
+}
+.mob-menu-block__item {
+  &:first-child {
+    margin-bottom: 36px;
+  }
+  &:nth-child(2) {
+    margin-bottom: 32px;
+  }
+}
+.mob-contacts-block {
+  margin-bottom: 64px;
+}
+.mob-contacts-block__link-tel {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.mob-contacts-block__item {
+  &:first-child {
+    margin-bottom: 32px;
+  }
+}
+.mob-contacts-block__link-mail {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.mob-social-block {
+  display: flex;
+}
+.mob-social-block__item {
+  &:not(:last-child)::after {
+    content: '';
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+.mob-social-block__link {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding-right: 10px;
+  padding-left: 10px;
+}

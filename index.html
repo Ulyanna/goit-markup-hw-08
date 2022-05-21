@@ -24,10 +24,14 @@
           <a href="./index.html" class="logo naw__logo logo--dark text"
             ><span class="naw__logo-first">Web</span>Studio</a
           >
-          <button type="button" class="btn-menu-mobile is-open" js-open-menu>
+          <button
+            type="button"
+            class="btn-menu-mobile is-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu-container"
+          >
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use href="./images/sprite.svg#icon-menu" class="btn-menu-mobile__icon"></use>
-              <use href="./images/sprite.svg#icon-close" class="btn-menu-mobile__close"></use>
+              <use href="./images/sprite.svg#icon-menu" class="btn-menu-mobile__icon-menu"></use>
             </svg>
           </button>
           <ul class="naw-list">
@@ -61,6 +65,67 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="container-mobile js-menu-container" id="mobile-menu-container">
+        <div class="container">
+          <button
+            type="button"
+            class="btn-menu-mobile__close js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu-container"
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-block">
+            <li class="mob-menu-block__item">
+              <a href="./index.html" class="mob-menu-block__link text current">Студия</a>
+            </li>
+            <li class="mob-menu-block__item">
+              <a href="./portfolio.html" target="_blank" class="mob-menu-block__link text"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu-block__item">
+              <a href="" class="mob-menu-block__link text">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mob-contacts-block">
+            <li class="mob-contacts-block__item">
+              <a href="tel:+380961111111" class="mob-contacts-block__link-tel text">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mob-contacts-block__item">
+              <a href="mailto:info@devstudio.com" class="mob-contacts-block__link-mail text">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-social-block">
+            <li class="mob-social-block__item">
+              <a href="" class="mob-social-block__link text" rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="mob-social-block__item">
+              <a href="" class="mob-social-block__link text" rel="noopener noreferrer nofollow"
+                >Twitter</a
+              >
+            </li>
+            <li class="mob-social-block__item">
+              <a href="" class="mob-social-block__link text" rel="noopener noreferrer nofollow"
+                >Facebook</a
+              >
+            </li>
+            <li class="mob-social-block__item">
+              <a href="" class="mob-social-block__link text" rel="noopener noreferrer nofollow"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -507,7 +572,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-        <button type="button" class="modal__btn-exit" data-menu-button>
+        <button type="button" class="modal__btn-exit" data-modal-close>
           <svg class="modal__icon-exit" width="11" height="11">
             <use href="./images/sprite.svg#icon-cross"></use>
           </svg>
@@ -583,6 +648,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
