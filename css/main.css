@@ -296,6 +296,7 @@ img {
   background-color: var(--white-color);
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  overflow-y: scroll;
 }
 .container-mobile.is-open {
   transform: translateX(0);

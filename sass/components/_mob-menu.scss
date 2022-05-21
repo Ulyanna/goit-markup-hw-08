@@ -28,6 +28,8 @@
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 
+  overflow-y: scroll;
+
   &.is-open {
     transform: translateX(0);
   }
