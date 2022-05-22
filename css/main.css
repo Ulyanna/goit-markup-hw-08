@@ -306,6 +306,12 @@ img {
     display: none;
   }
 }
+.container-mobile.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .btn-menu-mobile__close {
   display: block;
@@ -319,14 +325,10 @@ img {
   fill: var(--accent-color);
 }
 
-.mob-menu-block {
-  margin-bottom: 302px;
-}
-
 .mob-menu-block__link {
   font-family: inherit;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
@@ -336,6 +338,11 @@ img {
 }
 .mob-menu-block__link.current {
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu-block__link {
+    font-size: 40px;
+  }
 }
 
 .mob-menu-block__item:first-child {
@@ -352,10 +359,15 @@ img {
 .mob-contacts-block__link-tel {
   font-family: inherit;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-contacts-block__link-tel {
+    font-size: 34px;
+  }
 }
 
 .mob-contacts-block__item:first-child {
@@ -365,10 +377,15 @@ img {
 .mob-contacts-block__link-mail {
   font-family: inherit;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-contacts-block__link-mail {
+    font-size: 24px;
+  }
 }
 
 .mob-social-block {
@@ -384,7 +401,7 @@ img {
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -393,6 +410,11 @@ img {
 }
 .mob-social-block__link.reset {
   padding-left: 0;
+}
+@media screen and (min-width: 480px) {
+  .mob-social-block__link {
+    font-size: 18px;
+  }
 }
 
 /* Герой */
@@ -438,12 +460,17 @@ img {
 
 .hero__title {
   margin-bottom: var(--card-set-gap);
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.6;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {

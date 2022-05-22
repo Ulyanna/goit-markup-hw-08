@@ -42,13 +42,16 @@
 .hero__title {
   margin-bottom: var(--card-set-gap);
 
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.6;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--white-color);
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
